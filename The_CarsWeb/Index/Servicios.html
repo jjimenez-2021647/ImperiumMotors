@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../Images/Logo.jpg">
+    <link rel="stylesheet" href="../Styles/estilo.css">
+    <title>Servivios</title>
+</head>
+
+<body>
+
+    <header class="main-header">
+        <!-- Título a la izquierda -->
+        <div class="header-title">
+            <h1>Servivios</h1>
+        </div>
+
+        <div class="tooltip-container">
+            <div class="button-content">
+                <span class="text">Menu</span>
+                <img class="share-icon" src="../Images/MenuIcono.png" alt="Icono de compartir" width="24" height="24">
+            </div>
+            <div class="tooltip-content">
+                <div class="social-icons">
+                    <a href="../Index/PaginaPrincipal.html" class="social-icon carros">
+                        <img src="../Images/casita.png" alt="Icono de casa" width="24" height="24">
+                    </a>
+                    <a href="../Index/Catalogo.html" class="social-icon carros">
+                        <img src="../Images/Carros.png" alt="Icono de carro" width="24" height="24">
+                    </a>
+                    <a href="#" class="social-icon carros">
+                        <img src="../Images/Servicvios.png" alt="Icono de servicios" width="24" height="24">
+                    </a>
+                    <a href="../Index/index.html#beneficios" class="social-icon carros">
+                        <img src="../Images/Beneficios.png" alt="Icono de beneficios" width="24" height="24">
+                    </a>
+                    <a href="../Index/index.html#Nosotros" class="social-icon carros">
+                        <img src="../Images/Nosotros.png" alt="Icono de contacto" width="24" height="24">
+                    </a>
+                    <a href="../Index/index.html#contacto" class="social-icon carros">
+                        <img src="../Images/Contacto.png" alt="Icono de nosotros" width="24" height="24">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Imagen de fondo -->
+    <section class="hero-background">
+        <!-- Imagenes de fondo -->
+        <div class="background-slideshow">
+            <div class="slide"></div>
+            <div class="slide"></div>
+            <div class="slide"></div>
+            <div class="slide"></div>
+            <div class="slide"></div>
+            <div class="slide"></div>
+            <div class="slide"></div>
+            <div class="slide"></div>
+            <div class="slide"></div>
+            <div class="slide"></div>
+        </div>
+
+        <!-- Contenido sobre el fondo -->
+        <div class="hero-content-encabezado">
+            <h2>Servivios disponibles</h2>
+            <p>El mejor cuidado para tus autos</p>
+            <div class="hero-buttons">
+                <a href="#Pintura" class="btn-botones">Pintura</a>
+                <a href="#Llantas" class="btn-botones">Llantas</a>
+                <a href="#Discos de Freno" class="btn-botones">Discos de Freno</a>
+                <a href="#Enderezado" class="btn-botones">Enderezado</a>
+                <a href="#Modificaciones" class="btn-botones">Modificaciones</a>
+                <a href="#Servicio Completo" class="btn-botones">Servicio Completo</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contenido principal -->
+    <main class="main-content">
+        <section id="Servicios" class="content-section">
+            <div class="container">
+                <article class="hero-overlay">
+                    <h2><i>Servicios Disponibles</i></h2>
+                    <center class="fondoimg">
+                        <div class="glass-container">
+                            <section id="Pintura">
+                                <div class="card2">
+                                    <div class="card2__shine"></div>
+                                    <div class="card2__glow"></div>
+                                    <div class="card2__content">
+                                        <div class="card2__badge">Disponible</div>
+                                        <div class="carousel-container">
+                                            <!-- Radio buttons ocultos para controlar el carousel -->
+                                            <input type="radio" name="carousel5" id="dodge1-slide1" checked>
+                                            <input type="radio" name="carousel5" id="dodge1-slide2">
+                                            <input type="radio" name="carousel5" id="dodge1-slide3">
+                                            <input type="radio" name="carousel5" id="dodge1-slide4">
+                                            <input type="radio" name="carousel5" id="dodge1-slide5">
+
+                                            <div class="carousel">
+                                                <div class="carousel-track">
+                                                    <div class="carousel-item carousel-img">
+                                                        <img src="../Images/Pintura1.png" alt="BMW M5">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="../Images/Pintura2.jpg" alt="BMW M5">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="../Images/Pintura3.jpeg" alt="BMW M5">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="../Images/Pintura4.jpg" alt="BMW M5">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="../Images/Pintura5.jpeg" alt="BMW M5">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- Flechas de navegación CON LÍMITES -->
+                                            <!-- Solo se muestran las flechas necesarias según el slide activo -->
+
+                                            <label for="dodge1-slide2" class="nav-label next-1">❯</label>
+
+                                            <label for="dodge1-slide3" class="nav-label next-2">❯</label>
+                                            <label for="dodge1-slide1" class="nav-label prev-1">❮</label>
+
+                                            <label for="dodge1-slide4" class="nav-label next-3">❯</label>
+                                            <label for="dodge1-slide2" class="nav-label prev-2">❮</label>
+
+                                            <label for="dodge1-slide5" class="nav-label next-4">❯</label>
+                                            <label for="dodge1-slide3" class="nav-label prev-3">❮</label>
+
+                                            <label for="dodge1-slide4" class="nav-label prev-4">❮</label>
+
+                                            <!-- Indicadores -->
+                                            <div class="carousel-indicators">
+                                                <label for="dodge1-slide1" class="indicator"></label>
+                                                <label for="dodge1-slide2" class="indicator"></label>
+                                                <label for="dodge1-slide3" class="indicator"></label>
+                                                <label for="dodge1-slide4" class="indicator"></label>
+                                                <label for="dodge1-slide4" class="indicator"></label>
+                                            </div>
+                                        </div>
+
+                                        <div class="card2__text">
+                                            <p class="card2__title">Pintura de Carros</p>
+                                            <p class="card2__description" style="text-align: justify;">
+                                                Devuélvele el brillo original a tu vehículo con nuestro servicio de
+                                                pintura profesional. Utilizamos cabinas especializadas, pinturas de alta
+                                                calidad y acabados pulidos para que tu carro luzca como nuevo.
+                                            </p>
+                                        </div>
+                                        <div class="card2__footer">
+                                            <div class="card2__price">Q2,000 – Q5,500 (Todo el carro)</div>
+                                            <div class="card2__button">
+                                                <svg height="16" width="16" viewBox="0 0 24 24">
+                                                    <path stroke-width="2" stroke="currentColor" d="M4 12H20M12 4V20"
+                                                        fill="currentColor"></path>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <button class="buttonC">
+                                            <span class="shadowC"></span>
+                                            <span class="edgeC"></span>
+                                            <div class="frontC">
+                                                <span>Solicitar</span>
+                                            </div>
+                                        </button>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <div class="espaciador-lados"></div>
+
+                            <section id="Llantas">
+                                <div class="card2">
+                                    <div class="card2__shine"></div>
+                                    <div class="card2__glow"></div>
+                                    <div class="card2__content">
+                                        <div class="card2__badge">Disponible</div>
+                                        <div class="carousel-container">
+                                            <!-- Radio buttons ocultos para controlar el carousel -->
+                                            <input type="radio" name="carousel4" id="dodge2-slide1" checked>
+                                            <input type="radio" name="carousel4" id="dodge2-slide2">
+                                            <input type="radio" name="carousel4" id="dodge2-slide3">
+                                            <input type="radio" name="carousel4" id="dodge2-slide4">
+                                            <input type="radio" name="carousel4" id="dodge2-slide5">
+
+                                            <div class="carousel">
+                                                <div class="carousel-track">
+                                                    <div class="carousel-item carousel-img">
+                                                        <img src="../Images/LlantasBMW.jpeg" alt="BMW M5">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="../Images/LlantasPorsche.jpeg" alt="BMW M5">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="../Images/LLantas.jpg" alt="BMW M5">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="../Images/LlantasToyota.jpg" alt="BMW M5">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="../Images/LlantasMercedes.jpg" alt="BMW M5">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- Flechas de navegación CON LÍMITES -->
+                                            <!-- Solo se muestran las flechas necesarias según el slide activo -->
+                                            <label for="dodge2-slide2" class="nav-label next-1">❯</label>
+
+                                            <label for="dodge2-slide3" class="nav-label next-2">❯</label>
+                                            <label for="dodge2-slide1" class="nav-label prev-1">❮</label>
+
+                                            <label for="dodge2-slide4" class="nav-label next-3">❯</label>
+                                            <label for="dodge2-slide2" class="nav-label prev-2">❮</label>
+
+                                            <label for="dodge2-slide5" class="nav-label next-4">❯</label>
+                                            <label for="dodge2-slide3" class="nav-label prev-3">❮</label>
+
+                                            <label for="dodge2-slide4" class="nav-label prev-4">❮</label>
+
+                                            <!-- Indicadores -->
+                                            <div class="carousel-indicators">
+                                                <label for="dodge2-slide1" class="indicator"></label>
+                                                <label for="dodge2-slide2" class="indicator"></label>
+                                                <label for="dodge2-slide3" class="indicator"></label>
+                                                <label for="dodge2-slide4" class="indicator"></label>
+                                                <label for="dodge2-slide4" class="indicator"></label>
+                                            </div>
+                                        </div>
+
+                                        <div class="card2__text">
+                                            <p class="card2__title"> Cambio y Venta de Llantas</p>
+                                            <p class="card2__description" style="text-align: justify;">
+                                                Te ofrecemos llantas nuevas de marcas reconocidas y el servicio completo
+                                                de instalación, balanceo y alineación para mayor seguridad y rendimiento
+                                                en la carretera, instalación según marca y medida.
+                                            </p>
+                                        </div>
+                                        <div class="card2__footer">
+                                            <div class="card2__price">Q2,000 – Q4,500 </div>
+                                            <div class="card2__button">
+                                                <svg height="16" width="16" viewBox="0 0 24 24">
+                                                    <path stroke-width="2" stroke="currentColor" d="M4 12H20M12 4V20"
+                                                        fill="currentColor"></path>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <button class="buttonC">
+                                            <span class="shadowC"></span>
+                                            <span class="edgeC"></span>
+                                            <div class="frontC">
+                                                <span>Solicitar</span>
+                                            </div>
+                                        </button>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <div class="espaciador-lados"></div>
+
+                            <section id="Discos de Freno">
+                                <div class="card2">
+                                    <div class="card2__shine"></div>
+                                    <div class="card2__glow"></div>
+                                    <div class="card2__content">
+                                        <div class="card2__badge">Disponible</div>
+                                        <div class="carousel-container">
+                                            <!-- Radio buttons ocultos para controlar el carousel -->
+                                            <input type="radio" name="carousel6" id="dodge3-slide1" checked>
+                                            <input type="radio" name="carousel6" id="dodge3-slide2">
+                                            <input type="radio" name="carousel6" id="dodge3-slide3">
+                                            <input type="radio" name="carousel6" id="dodge3-slide4">
+                                            <input type="radio" name="carousel6" id="dodge3-slide5">
+
+                                            <div class="carousel">
+                                                <div class="carousel-track">
+                                                    <div class="carousel-item carousel-img">
+                                                        <img src="../Images/D1.jpeg" alt="BMW M5">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="../Images/D5.jpeg" alt="BMW M5">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="../Images/D2.jpeg" alt="BMW M5">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="../Images/D4.jpeg" alt="BMW M5">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="../Images/D3.jpeg" alt="BMW M5">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- Flechas de navegación CON LÍMITES -->
+                                            <!-- Solo se muestran las flechas necesarias según el slide activo -->
+                                            <label for="dodge3-slide2" class="nav-label next-1">❯</label>
+
+                                            <label for="dodge3-slide3" class="nav-label next-2">❯</label>
+                                            <label for="dodge3-slide1" class="nav-label prev-1">❮</label>
+
+                                            <label for="dodge3-slide4" class="nav-label next-3">❯</label>
+                                            <label for="dodge3-slide2" class="nav-label prev-2">❮</label>
+
+                                            <label for="dodge3-slide5" class="nav-label next-4">❯</label>
+                                            <label for="dodge3-slide3" class="nav-label prev-3">❮</label>
+
+                                            <label for="dodge3-slide4" class="nav-label prev-4">❮</label>
+
+                                            <!-- Indicadores -->
+                                            <div class="carousel-indicators">
+                                                <label for="dodge3-slide1" class="indicator"></label>
+                                                <label for="dodge3-slide2" class="indicator"></label>
+                                                <label for="dodge3-slide3" class="indicator"></label>
+                                                <label for="dodge3-slide4" class="indicator"></label>
+                                                <label for="dodge3-slide4" class="indicator"></label>
+                                            </div>
+                                        </div>
+
+                                        <div class="card2__text">
+                                            <p class="card2__title">Reparación o Cambio de Discos de Freno</p>
+                                            <p class="card2__description" style="text-align: justify;">
+                                                Mantené tu sistema de frenos en condiciones óptimas. Realizamos
+                                                inspección, reparación o cambio de discos y pastillas, asegurando un
+                                                frenado confiable y seguro.
+                                            </p>
+                                        </div>
+                                        <div class="card2__footer">
+                                            <div class="card2__price">Q1,200 – Q2,800</div>
+                                            <div class="card2__button">
+                                                <svg height="16" width="16" viewBox="0 0 24 24">
+                                                    <path stroke-width="2" stroke="currentColor" d="M4 12H20M12 4V20"
+                                                        fill="currentColor"></path>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <button class="buttonC">
+                                            <span class="shadowC"></span>
+                                            <span class="edgeC"></span>
+                                            <div class="frontC">
+                                                <span>Solicitar</span>
+                                            </div>
+                                        </button>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </center>
+
+                    <br></br>
+
+                    <center class="fondoimg">
+                        <div class="glass-container">
+                            <section id="Enderezado">
+                                <div class="card2">
+                                    <div class="card2__shine"></div>
+                                    <div class="card2__glow"></div>
+                                    <div class="card2__content">
+                                        <div class="card2__badge">Disponible</div>
+                                        <div class="carousel-container">
+                                            <!-- Radio buttons ocultos para controlar el carousel -->
+                                            <input type="radio" name="carousel1" id="car1-slide1" checked>
+                                            <input type="radio" name="carousel1" id="car1-slide2">
+                                            <input type="radio" name="carousel1" id="car1-slide3">
+                                            <input type="radio" name="carousel1" id="car1-slide4">
+                                            <input type="radio" name="carousel1" id="car1-slide5">
+
+                                            <div class="carousel">
+                                                <div class="carousel-track">
+                                                    <div class="carousel-item carousel-img">
+                                                        <img src="../Images/E1.jpg" alt="BMW M5">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="../Images/E2.jpeg" alt="BMW M5">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="../Images/E3.jpeg" alt="BMW M5">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="../Images/E4.jpeg" alt="BMW M5">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="../Images/E5.jpeg" alt="BMW M5">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- Flechas de navegación CON LÍMITES -->
+                                            <!-- Solo se muestran las flechas necesarias según el slide activo -->
+
+                                            <label for="car1-slide2" class="nav-label next-1">❯</label>
+
+                                            <label for="car1-slide3" class="nav-label next-2">❯</label>
+                                            <label for="car1-slide1" class="nav-label prev-1">❮</label>
+
+                                            <label for="car1-slide4" class="nav-label next-3">❯</label>
+                                            <label for="car1-slide2" class="nav-label prev-2">❮</label>
+
+                                            <label for="car1-slide5" class="nav-label next-4">❯</label>
+                                            <label for="car1-slide3" class="nav-label prev-3">❮</label>
+
+                                            <label for="car1-slide4" class="nav-label prev-4">❮</label>
+
+                                            <!-- Indicadores -->
+                                            <div class="carousel-indicators">
+                                                <label for="car1-slide1" class="indicator"></label>
+                                                <label for="car1-slide2" class="indicator"></label>
+                                                <label for="car1-slide3" class="indicator"></label>
+                                                <label for="car1-slide4" class="indicator"></label>
+                                                <label for="car1-slide5" class="indicator"></label>
+                                            </div>
+                                        </div>
+
+                                        <div class="card2__text">
+                                            <p class="card2__title">Enderezado y Pintura de Abolladuras</p>
+                                            <p class="card2__description" style="text-align: justify;">
+                                                ¿Tu carro tiene golpes o abolladuras? Nuestro servicio de enderezado
+                                                deja tu vehículo como nuevo. Reparación de latonería, aplicación de
+                                                pintura y acabado profesional para devolverle su forma y brillo
+                                                original.
+                                            </p>
+                                        </div>
+                                        <div class="card2__footer">
+                                            <div class="card2__price">Q800 – Q3,000</div>
+                                            <div class="card2__button">
+                                                <svg height="16" width="16" viewBox="0 0 24 24">
+                                                    <path stroke-width="2" stroke="currentColor" d="M4 12H20M12 4V20"
+                                                        fill="currentColor"></path>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <button class="buttonC">
+                                            <span class="shadowC"></span>
+                                            <span class="edgeC"></span>
+                                            <div class="frontC">
+                                                <span>Solicitar</span>
+                                            </div>
+                                        </button>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <div class="espaciador-lados"></div>
+
+                            <section id="Modificaciones">
+                                <div class="card2">
+                                    <div class="card2__shine"></div>
+                                    <div class="card2__glow"></div>
+                                    <div class="card2__content">
+                                        <div class="card2__badge">Disponible</div>
+                                        <div class="carousel-container">
+                                            <!-- Radio buttons ocultos para controlar el carousel -->
+                                            <input type="radio" name="carousel2" id="car2-slide1" checked>
+                                            <input type="radio" name="carousel2" id="car2-slide2">
+                                            <input type="radio" name="carousel2" id="car2-slide3">
+                                            <input type="radio" name="carousel2" id="car2-slide4">
+                                            <input type="radio" name="carousel2" id="car2-slide5">
+
+                                            <div class="carousel">
+                                                <div class="carousel-track">
+                                                    <div class="carousel-item carousel-img">
+                                                        <img src="../Images/M1.jpeg" alt="BMW M5">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="../Images/M2.jpg" alt="BMW M5">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="../Images/M3.jpg" alt="BMW M5">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="../Images/M4.jpeg" alt="BMW M5">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="../Images/M5.jpg" alt="BMW M5">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- Flechas de navegación CON LÍMITES -->
+                                            <!-- Solo se muestran las flechas necesarias según el slide activo -->
+                                            <label for="car2-slide2" class="nav-label next-1">❯</label>
+
+                                            <label for="car2-slide3" class="nav-label next-2">❯</label>
+                                            <label for="car2-slide1" class="nav-label prev-1">❮</label>
+
+                                            <label for="car2-slide4" class="nav-label next-3">❯</label>
+                                            <label for="car2-slide2" class="nav-label prev-2">❮</label>
+
+                                            <label for="car2-slide5" class="nav-label next-4">❯</label>
+                                            <label for="car2-slide3" class="nav-label prev-3">❮</label>
+
+                                            <label for="car2-slide4" class="nav-label prev-4">❮</label>
+
+                                            <!-- Indicadores -->
+                                            <div class="carousel-indicators">
+                                                <label for="car2-slide1" class="indicator"></label>
+                                                <label for="car2-slide2" class="indicator"></label>
+                                                <label for="car2-slide3" class="indicator"></label>
+                                                <label for="car2-slide4" class="indicator"></label>
+                                                <label for="car2-slide5" class="indicator"></label>
+                                            </div>
+                                        </div>
+
+                                        <div class="card2__text">
+                                            <p class="card2__title">Modificaciones Personalizadas</p>
+                                            <p class="card2__description" style="text-align: justify;">
+                                                ¿Querés un carro único y personalizado? Realizamos
+                                                modificaciones a tu medida: turbos, escapes deportivos,
+                                                kits de carrocería, suspensiones rebajadas, alerones y mucho más.
+                                                Hacemos realidad tus ideas con calidad y estilo.
+                                            </p>
+                                        </div>
+                                        <div class="card2__footer">
+                                            <div class="card2__price">Q2,500 – Q15,000+</div>
+                                            <div class="card2__button">
+                                                <svg height="16" width="16" viewBox="0 0 24 24">
+                                                    <path stroke-width="2" stroke="currentColor" d="M4 12H20M12 4V20"
+                                                        fill="currentColor"></path>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <button class="buttonC">
+                                            <span class="shadowC"></span>
+                                            <span class="edgeC"></span>
+                                            <div class="frontC">
+                                                <span>Solicitar</span>
+                                            </div>
+                                        </button>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <div class="espaciador-lados"></div>
+
+                            <section id="Servicio Completo">
+                                <div class="card2">
+                                    <div class="card2__shine"></div>
+                                    <div class="card2__glow"></div>
+                                    <div class="card2__content">
+                                        <div class="card2__badge">Disponible</div>
+                                        <div class="carousel-container">
+                                            <!-- Radio buttons ocultos para controlar el carousel -->
+                                            <input type="radio" name="carousel3" id="car3-slide1" checked>
+                                            <input type="radio" name="carousel3" id="car3-slide2">
+                                            <input type="radio" name="carousel3" id="car3-slide3">
+                                            <input type="radio" name="carousel3" id="car3-slide4">
+                                            <input type="radio" name="carousel3" id="car3-slide5">
+
+                                            <div class="carousel">
+                                                <div class="carousel-track">
+                                                    <div class="carousel-item carousel-img">
+                                                        <img src="../Images/S1.jpeg" alt="BMW M5">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="../Images/S2.jpeg" alt="BMW M5">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="../Images/S3.jpeg" alt="BMW M5">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="../Images/S4.jpg" alt="BMW M5">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="../Images/S5.jpeg" alt="BMW M5">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- Flechas de navegación CON LÍMITES -->
+                                            <!-- Solo se muestran las flechas necesarias según el slide activo -->
+                                            <label for="car3-slide2" class="nav-label next-1">❯</label>
+
+                                            <label for="car3-slide3" class="nav-label next-2">❯</label>
+                                            <label for="car3-slide1" class="nav-label prev-1">❮</label>
+
+                                            <label for="car3-slide4" class="nav-label next-3">❯</label>
+                                            <label for="car3-slide2" class="nav-label prev-2">❮</label>
+
+                                            <label for="car3-slide5" class="nav-label next-4">❯</label>
+                                            <label for="car3-slide3" class="nav-label prev-3">❮</label>
+
+                                            <label for="car3-slide4" class="nav-label prev-4">❮</label>
+
+                                            <!-- Indicadores -->
+                                            <div class="carousel-indicators">
+                                                <label for="car3-slide1" class="indicator"></label>
+                                                <label for="car3-slide2" class="indicator"></label>
+                                                <label for="car3-slide3" class="indicator"></label>
+                                                <label for="car3-slide4" class="indicator"></label>
+                                                <label for="car3-slide5" class="indicator"></label>
+                                            </div>
+                                        </div>
+
+                                        <div class="card2__text">
+                                            <p class="card2__title">Servicio Completo</p>
+                                            <p class="card2__description" style="text-align: justify;">
+                                                ¿Querés mantener tu carro en óptimas condiciones? Con nuestro servicio
+                                                completo lo revisamos a fondo: cambio de aceite, filtros, niveles,
+                                                escaneo, inspección general y más. Todo lo necesario para que rinda al
+                                                100%.
+                                            </p>
+                                        </div>
+                                        <div class="card2__footer">
+                                            <div class="card2__price">Q600 – Q1,200</div>
+                                            <div class="card2__button">
+                                                <svg height="16" width="16" viewBox="0 0 24 24">
+                                                    <path stroke-width="2" stroke="currentColor" d="M4 12H20M12 4V20"
+                                                        fill="currentColor"></path>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <button class="buttonC">
+                                            <span class="shadowC"></span>
+                                            <span class="edgeC"></span>
+                                            <div class="frontC">
+                                                <span>Solicitar</span>
+                                            </div>
+                                        </button>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </center>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer básico -->
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2025 Imperium Motors. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
