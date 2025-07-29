@@ -253,89 +253,58 @@ HEADER PRINCIPAL
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
 
-/* Botones del hero */
 .hero-buttons {
     display: flex;
     gap: 20px;
     justify-content: center;
     flex-wrap: wrap;
     margin-bottom: 30px;
+    box-sizing: border-box;
 }
 
+/* Botones responsivos */
 .btn-botones {
     display: inline-block;
-    padding: 15px 35px;
+    padding: clamp(8px, 2vw, 15px) clamp(20px, 4vw, 35px);
     text-decoration: none;
     font-weight: 600;
-    font-size: 1.1rem;
-    border-radius: 50px;
+    font-size: clamp(0.85rem, 2vw, 1.1rem);
+    border-radius: clamp(25px, 5vw, 50px);
     transition: all 0.3s ease;
     text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing: clamp(0.2px, 0.5vw, 1px);
     background: transparent;
     color: white;
     border: 2px solid white;
+    text-align: center;
+    box-sizing: border-box;
+
+    /* Ancho mínimo y máximo para que el botón se autoajuste */
+    min-width: 150px;
+    max-width: 100vh;
+    flex-grow: 1; /* Para que crezca si hay espacio */
 }
 
+/* Hover */
 .btn-botones:hover {
     background: white;
     color: #000000;
-    transform: translateY(-5px);
+    transform: translateY(-4px);
 }
 
-/* Media Queries para Responsividad */
-
-/* Tablets y pantallas medianas (768px - 1024px) */
-@media (max-width: 1024px) {
-    .btn-botones {
-        padding: 12px 28px;
-        font-size: 1rem;
-        letter-spacing: 0.8px;
-    }
-}
-
-/* Tablets pequeñas y móviles grandes (481px - 768px) */
-@media (max-width: 768px) {
-    .btn-botones {
-        padding: 10px 25px;
-        font-size: 0.95rem;
-        letter-spacing: 0.5px;
-        border-radius: 40px;
-    }
-    
-    .btn-botones:hover {
-        transform: translateY(-3px);
-    }
-}
-
-/* Móviles (320px - 480px) */
+/* Ajustes para pantallas muy pequeñas */
 @media (max-width: 480px) {
     .btn-botones {
-        padding: 8px 20px;
-        font-size: 0.85rem;
-        letter-spacing: 0.3px;
-        border-radius: 30px;
-        width: 100%;
-        max-width: 280px;
-        text-align: center;
-        margin: 5px 0;
+        max-width: 20px;
     }
-    
+
     .btn-botones:hover {
         transform: translateY(-2px);
     }
 }
 
-/* Móviles muy pequeños (menos de 320px) */
-@media (max-width: 320px) {
-    .btn-botones {
-        padding: 6px 15px;
-        font-size: 0.8rem;
-        letter-spacing: 0.2px;
-        border-radius: 25px;
-        max-width: 250px;
-    }
-}
+
+
 
 /* =================================
    CONTENIDO PRINCIPAL
@@ -1554,7 +1523,7 @@ Estilo para texto en imagenes
     }
 }
 
-/* From Uiverse.io by zymantas-katinas */ 
+
 .buttonC {
   position: relative;
   border: none;
@@ -3244,7 +3213,7 @@ Estilo para texto en imagenes
     }
 }
 
-.wrapper {
+.wrapper{
   --input-focus: #000000;
   --font-color: #ffffff;
   --font-color-sub: #666;
@@ -3445,3 +3414,61 @@ Estilo para texto en imagenes
   color: black;
   cursor: pointer;
 } 
+
+/* Estilos para los mensajes de error y éxito */
+#login-error, #register-success {
+    display: none;  /* Inicialmente ocultos */
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;  /* Centrar los mensajes */
+    margin-top: 10px;
+    width: 250px;  /* Para que tenga el mismo tamaño que el input */
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: opacity 0.3s ease;  /* Transición suave para el cambio de visibilidad */
+}
+
+/* Estilos para el mensaje de error */
+#login-error {
+    color: red;
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+}
+
+/* Estilos para el mensaje de éxito */
+#register-success {
+    color: green;
+    background-color: #d4edda;
+    border: 1px solid #c3e6cb;
+}
+
+/* Asegúrate de que los inputs, botones y mensajes estén bien alineados */
+.flip-card__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Mejora la visibilidad de los botones */
+.flip-card__btn {
+    margin: 20px 0;
+    width: 120px;
+    height: 40px;
+    border-radius: 5px;
+    border: 2px solid var(--main-color);
+    background-color: var(--bg-color);
+    box-shadow: 4px 4px rgba(255, 255, 255, 0.389);
+    font-size: 17px;
+    font-weight: 600;
+    color: black;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Efecto al presionar el botón */
+.flip-card__btn:active {
+    box-shadow: 0px 0px var(--main-color);
+    transform: translate(3px, 3px);
+}

@@ -11,7 +11,6 @@
 
 <body>
     <header class="main-header">
-        <!-- Título a la izquierda -->
         <div class="header-title">
             <h1>Imperium Motors</h1>
         </div>
@@ -46,9 +45,7 @@
         </div>
     </header>
 
-    <!-- Imagen de fondo -->
     <section class="hero-background">
-        <!-- Images de fondo -->
         <div class="background-slideshow">
             <div class="slide"></div>
             <div class="slide"></div>
@@ -62,10 +59,8 @@
             <div class="slide"></div>
         </div>
 
-        <!-- Contenido sobre el fondo -->
         <div class="hero-content-encabezado">
-            <br></br>
-
+            <!-- HTML Corregido para los formularios -->
             <div class="wrapper" id="Login">
                 <div class="card-switch">
                     <label class="switch">
@@ -73,37 +68,43 @@
                         <span class="slider"></span>
                         <span class="card-side"></span>
                         <div class="flip-card__inner">
+                            <!-- Formulario de Iniciar Sesión -->
                             <div class="flip-card__front">
                                 <div class="title">Iniciar Sesión</div>
-                                <form class="flip-card__form" action="">
-                                    <input class="flip-card__input" name="email" placeholder="Email" type="email">
+                                <form class="flip-card__form" id="login-form">
+                                    <input class="flip-card__input" name="email" placeholder="Email" type="email"
+                                        required>
                                     <input class="flip-card__input" name="password" placeholder="Password"
-                                        type="password">
+                                        type="password" required>
+                                    <button type="submit" class="flip-card__btn">Iniciar Sesión</button>
                                 </form>
-                                <a href="PaginaPrincipal.html">
-                                        <button class="flip-card__btn">Iniciar Sesión</button>
-                                    </a>
+                                <div id="login-error" style="display: none;">El usuario no existe. Regístrate primero.
+                                </div>
                             </div>
+
+                            <!-- Formulario de Registro -->
                             <div class="flip-card__back">
                                 <div class="title">Registrarse</div>
-                                <form class="flip-card__form" action="">
-                                    <input class="flip-card__input" placeholder="Name" type="name">
-                                    <input class="flip-card__input" name="email" placeholder="Email" type="email">
+                                <form class="flip-card__form" id="register-form">
+                                    <input class="flip-card__input" name="name" placeholder="Nombre" type="text"
+                                        required>
+                                    <input class="flip-card__input" name="email" placeholder="Email" type="email"
+                                        required>
                                     <input class="flip-card__input" name="password" placeholder="Password"
-                                        type="password">
-                                    <a href="#Login">
-                                        <button class="flip-card__btn">Registrarse</button>
-                                    </a>
+                                        type="password" required>
+                                    <button type="submit" class="flip-card__btn">Registrarse</button>
                                 </form>
+                                <div id="register-success" style="display: none;">¡Registro exitoso! Ahora puedes
+                                    iniciar sesión.</div>
                             </div>
                         </div>
                     </label>
                 </div>
             </div>
-
-            <br></br>
-        </div>
     </section>
+
+    <script src="Scripts/Login.js"></script>
+
 </body>
 
 </html>
